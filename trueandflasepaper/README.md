@@ -1,40 +1,35 @@
-# Fill The Grid
+# True And False Paper
 ## Problem
-You have a grid with N rows and M columns. You have two types of tiles — one of dimensions 2 \times 2×2 and the other of dimensions 1 \times 1×1. You want to cover the grid using these two types of tiles in such a way that:
+Alice wrote an exam containing NN true or false questions (i.e. questions whose answer is either true or false). Each question is worth 11 mark and there is no negative marking in the examination. Alice scored KK marks out of NN.
 
-Each cell of the grid is covered by exactly one tile; and
-The number of 1 \times 1×1 tiles used is minimized.
-Find the minimum number of 1 \times 11×1 tiles you have to use to fill the grid.
+Bob wrote the same exam but he marked each and every question as the opposite of what Alice did, i.e, for whichever questions Alice marked true, Bob marked false and for whichever questions Alice marked false, Bob marked true.
+
+Determine the score of Bob.
 
 ### Input Format
-The first line of input will contain a single integer T, denoting the number of test cases.
-Each test case consists of a single line containing two space-separated integers N, MN,M.
+The first line contains a single integer TT — the number of test cases. Then the test cases follow.
+The first and only line of each test case contains two space-separated integers NN and KK — the total number of questions in the exam and the score of Alice.
+
 ### Output Format
-For each test case, print on a new line the minimum number of 1 \times 1×1 tiles needed to fill the grid.
+For each test case, output on a new line the score of Bob.
 
 ### Constraints
-1 <= N, M <= 1000
+1 <= N <= 100
+0 <= K <= N
  
 ### Sample 1:
 #### Input
-4
+3
 1 1
-4 5
-6 8
-3 2
+50 0
+100 76
 
 #### Output
-1
-4
 0
-2
+50
+24
 
 ### Explanation:
-Test case 11: There is only one square in the grid, and it must be filled with a single 1 \times 11×1 tile.
+Test case 11: There was one question in the exam and Alice answered it correctly. This means that Bob will surely answer it incorrectly. Therefore Bob's score is zero.
 
-Test case 22: One way of tiling the grid using 1\times 11×1 tiles exactly 44 times is as follows:
-
-Test case 33: One way of tiling the grid using no 1\times 11×1 tiles is as follows:
-
-Test case 44: One way of tiling the grid using 1\times 11×1 tiles exactly twice is:
-
+Test case 22: Alice answered all the questions incorrectly, and so Bob will surely answer all the questions correctly. Therefore Bob's score is 50.
