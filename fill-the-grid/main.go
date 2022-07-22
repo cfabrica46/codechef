@@ -11,6 +11,7 @@ import (
 func main() {
 	var attemps int
 
+	fmt.Print("Enter the number of attempts: ")
 	fmt.Scan(&attemps)
 
 	for i := 0; i < attemps; i++ {
@@ -21,6 +22,7 @@ func main() {
 func fillTheGrid() {
 	in := bufio.NewReader(os.Stdin)
 
+	fmt.Print("Enter the value of M and N [M N]: ")
 	line, err := in.ReadString('\n')
 	if err != nil {
 		return
