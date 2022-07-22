@@ -2,7 +2,7 @@
 ## Problem
 Chef has recently started playing chess, and wants to play as many games as possible.
 
-He calculated that playing one game of chess takes at least 2020 minutes of his time.
+He calculated that playing one game of chess takes at least 20 minutes of his time.
 
 Chef has NN hours of free time. What is the maximum number of complete chess games he can play in that time?
 
@@ -31,10 +31,10 @@ For each test case, output on a new line the maximum number of complete chess ga
 9
 
 ### Explanation:
-Test case 11: If every game Chef plays takes 2020 minutes, he can play 33 games in one hour.
+Test case 11: If every game Chef plays takes 20 minutes, he can play 3 games in one hour.
 
-Test case 22: If every game Chef plays takes 2020 minutes, he can play 3030 games in 1010 hours.
+Test case 22: If every game Chef plays takes 20 minutes, he can play 30 games in 10 hours.
 
-Test case 33: If every game Chef plays takes 2020 minutes, he can play 2121 games in 77 hours.
+Test case 33: If every game Chef plays takes 20 minutes, he can play 21 games in 7 hours.
 
-Test case 44: If every game Chef plays takes 2020 minutes, he can play 99 games in 33 hours.
+Test case 44: If every game Chef plays takes 20 minutes, he can play 9 games in 3 hours.

@@ -26,7 +26,7 @@ func main() {
 func chefOnDate() {
 	in := bufio.NewReader(os.Stdin)
 
-	fmt.Print("Enter the value of X and Y [x y]: ")
+	fmt.Print("Enter the value of X and Y : ")
 
 	line, err := in.ReadString('\n')
 	if err != nil {
