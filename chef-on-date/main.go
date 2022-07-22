@@ -15,6 +15,7 @@ const (
 func main() {
 	var attempts int
 
+	fmt.Print("Enter the number of attempts: ")
 	fmt.Scan(&attempts)
 
 	for i := 0; i < attempts; i++ {
@@ -24,6 +25,8 @@ func main() {
 
 func chefOnDate() {
 	in := bufio.NewReader(os.Stdin)
+
+	fmt.Print("Enter the value of X and Y [x y]: ")
 
 	line, err := in.ReadString('\n')
 	if err != nil {
